@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const port = 5000
+require("dotenv").config();
 
 const app = express();
 
@@ -20,5 +20,6 @@ const PropertiesRoutes = require('./routes/PropertiesRoutes');
 app.use('/users', UserRoutes)
 app.use('/properties', PropertiesRoutes)
 
+const PORT = process.env.PORT;
 
-app.listen(port)
+app.listen(PORT);
