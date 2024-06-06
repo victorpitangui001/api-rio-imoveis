@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // Solve Cors
-app.use(cors({credentials: true, origin:'http://localhost:3000'}));
+app.use(cors({credentials: true, origin:'https://front-rio-imoveis.vercel.app'}));
 
 // Public folder for imagens
 app.use(express.static('public'));
