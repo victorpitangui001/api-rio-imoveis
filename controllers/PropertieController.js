@@ -21,7 +21,7 @@ module.exports = class PropertiesController {
 
     // validation
     if (!type) {
-      res.status(422).json({ message: "O tipo é obrigatório" });
+      res.status(422).json({ message: "O Tipo é obrigatório" });
       return
     }
 
